@@ -1,10 +1,10 @@
 var assert = require("assert"),
-    underscore = require("../src/index");
+    dasherize = require("../src/index");
 
 
-describe("underscore(string : String)", function() {
-    it("should underscore string", function() {
-        assert.equal(underscore("string-string"), "string-string");
-        assert.equal(underscore("stringString"), "string-string");
+describe("dasherize(string : String)", function() {
+    it("should dasherize string", function() {
+        assert.equal(dasherize("string-string"), "string-string");
+        assert.equal(dasherize("stringString"), "string-string");
     });
 });
